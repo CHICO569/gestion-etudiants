@@ -7,58 +7,58 @@ use Illuminate\Http\Request;
 class EtudiantController extends Controller
 {
     /**
-     * Afficher la liste des étudiants
+     * Display the list of students
      */
     public function index()
     {
-        return 'Liste des étudiants';
+        return 'Student list';
     }
 
     /**
-     * Afficher le formulaire de création
+     * Display the student creation form
      */
     public function create()
     {
-        return 'Formulaire d\'ajout d\'un étudiant';
+        return 'Student creation form';
     }
 
     /**
-     * Enregistrer un nouvel étudiant
+     * Store a new student
      */
     public function store(Request $request)
     {
-        return 'Étudiant enregistré avec succès';
+        return 'Student successfully registered';
     }
 
     /**
-     * Afficher les informations d'un étudiant
+     * Display the information of a student
      */
     public function show($id)
     {
-        return 'Informations de l\'étudiant numéro ' . $id;
+        return 'Information about student number ' . $id;
     }
 
     /**
-     * Afficher le formulaire de modification
+     * Display the student edit form
      */
     public function edit($id)
     {
-        return 'Formulaire de modification de l\'étudiant numéro ' . $id;
+        return 'Edit form for student number ' . $id;
     }
 
     /**
-     * Modifier un étudiant
+     * Update a student
      */
     public function update(Request $request, $id)
     {
-        return 'Étudiant numéro ' . $id . ' modifié avec succès';
+        return 'Student number ' . $id . ' successfully updated';
     }
 
     /**
-     * Supprimer un étudiant
+     * Delete a student
      */
     public function destroy($id)
     {
-        return 'Étudiant numéro ' . $id . ' supprimé avec succès';
+        return 'Student number ' . $id . ' successfully deleted';
     }
 }
